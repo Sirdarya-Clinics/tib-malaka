@@ -1,13 +1,13 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 
 const Video = () => {
-  const [isOpen, setOpen] = useState(false);
+  // const [isOpen, setOpen] = useState(false);
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
@@ -30,7 +30,7 @@ const Video = () => {
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
-                    onClick={() => setOpen(true)}
+                    // onClick={() => setOpen(true)}
                     className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
                   >
                     <svg
@@ -49,14 +49,14 @@ const Video = () => {
         </div>
       </div>
 
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay={true}
         start={true}
         isOpen={isOpen}
         videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
-      />
+      /> */}
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>
