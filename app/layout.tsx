@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="uz">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -23,21 +23,19 @@ export default function RootLayout({
       <head />
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <Suspense fallback={<Loader/>}>
-         
-        <Providers>
-          
-          <HeaderEng />
-          {children}
-          <FooterEng />
-          <ScrollToTop />
-        </Providers>
+        <Suspense fallback={<Loader />}>
+          <Providers>
+            <HeaderEng />
+            {children}
+            <FooterEng />
+            <ScrollToTop />
+          </Providers>
         </Suspense>
       </body>
     </html>
   );
 }
 
-import { Providers } from "./providers";import { Suspense } from "react";
+import { Providers } from "./providers";
+import { Suspense } from "react";
 import Loader from "@/components/Loader";
-
