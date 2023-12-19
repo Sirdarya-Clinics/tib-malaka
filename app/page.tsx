@@ -14,8 +14,8 @@ import { Metadata } from "next";
 import Map from "@/components/Maps";
 
 export const metadata: Metadata = {
-  title: orgName.en,
-  description: heroText.en,
+  title: orgName.uz,
+  description: heroText.uz,
   // other metadata
 };
 

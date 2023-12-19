@@ -135,7 +135,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
+          <h2 className="mb-4 inline-block text-base text-body-color dark:text-body-color-dark">
+            Ish vaqti: Dushanba - Shanba, 9:00 - 18:00, Tushlik 13:00-14:00
+          </h2>
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
