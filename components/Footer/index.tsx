@@ -127,7 +127,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <h2 className="mb-5 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
-                      Guliston Shahar, G&apos;olibkar ko'chasi 46 uy
+                      Guliston Shahar, G&apos;olibkar ko&apos;chasi 46 uy
                     </h2>
                   </li>
                 </ul>
