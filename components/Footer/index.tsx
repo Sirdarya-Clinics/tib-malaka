@@ -112,6 +112,7 @@ const Footer = () => {
                       <a className="mb-2 text-xl font-bold text-black dark:text-white">
                         Elektron-pochta
                       </a>
+                      <br />
                       malakaguliston@mail.ru
                     </h2>
                   </li>
