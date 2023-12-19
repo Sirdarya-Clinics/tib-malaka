@@ -7,7 +7,7 @@ import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import { LanguageChanger } from "./langChanger";
 
-const HeaderEng = () => {
+const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -166,4 +166,4 @@ const HeaderEng = () => {
   );
 };
 
-export default HeaderEng;
+export default Header;

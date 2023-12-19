@@ -7,13 +7,13 @@ import uz from "../../public/uz.png";
 export function LanguageChanger() {
   return (
     <div className=" flex flex-row gap-4">
-      <Link href="/">
+      <Link href="/#">
         <Image src={uz} alt={"uz"} />
       </Link>
-      <Link href="/ru">
+      <Link href="/#">
         <Image src={ru} alt={"ru"} />
       </Link>
-      <Link href="/en">
+      <Link href="/#">
         <Image src={en} alt={"en"} />
       </Link>
     </div>

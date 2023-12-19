@@ -9,11 +9,12 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
+import { heroText, orgName } from "@/langData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "qwe",
-  description: "",
+  title: orgName.en,
+  description: heroText.en,
   // other metadata
 };
 
