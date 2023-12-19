@@ -100,18 +100,18 @@ const Footer = () => {
               <div className="mb-12 lg:mb-16">
                 <ul>
                   <li>
-                    <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
+                    <a className="mb-2 text-xl font-bold text-black dark:text-white">
                       Telefon raqamlar
-                    </h2>
+                    </a>
                     <h2 className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
                       67 227 21 39
                     </h2>
                   </li>
                   <li>
                     <h2 className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
-                      <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
+                      <a className="mb-2 text-xl font-bold text-black dark:text-white">
                         Elektron-pochta
-                      </h2>
+                      </a>
                       malakaguliston@mail.ru
                     </h2>
                   </li>
@@ -127,7 +127,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <h2 className="mb-5 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
-                      Guliston Shahar, G'olibkar ko'chasi 46 uy
+                      Guliston Shahar, G&apos;olibkar ko'chasi 46 uy
                     </h2>
                   </li>
                 </ul>
