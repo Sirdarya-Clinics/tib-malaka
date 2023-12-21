@@ -1,6 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import HeaderUz from "@/components/Header";
 
 import { Metadata } from "next";
 
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
+    <HeaderUz/>
       <Breadcrumb
         pageName="Biz haqimizda"
         description=" Respublika o’rta tibbiyot va farmasevtika xodimlari malakasini oshirish va ularni ixtisoslashtirish markazi Guliston filialining asosiy vazifasi Sirdaryo viloyati davolash profilaktika muassasalarining o’rta tibbiyot va farmasevtika xodimlarini malakasini oshirish va ularni ixtisoslashtirish bo’yicha  kunduzgi  (ishdan ajralgan va ishdan ajralmagan holda) oqishlarni tashkil etishdir.

@@ -1,6 +1,7 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import HeaderUz from "@/components/Header";
 
 import { Metadata } from "next";
 
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 const Blog = () => {
   return (
     <>
+    <HeaderUz/>
       <Breadcrumb
         pageName="Yangiliklar sahifasi"
         description="Malaka oshirish instituti Yangiliklar sahifasi"

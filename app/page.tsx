@@ -12,6 +12,7 @@ import Video from "@/components/Video";
 import { heroText, orgName } from "@/langData";
 import { Metadata } from "next";
 import Map from "@/components/Maps";
+import HeaderUz from "@/components/Header";
 
 export const metadata: Metadata = {
   title: orgName.uz,
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <HeaderUz/>
       <ScrollUp />
       <Hero />
       <Features />

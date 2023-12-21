@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import LoginUI from "./ui";
+import HeaderUz from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Login sahifasi",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function  LoginPage () {
   return (
     <>
+    <HeaderUz/>
     <LoginUI/>
     </>
   );

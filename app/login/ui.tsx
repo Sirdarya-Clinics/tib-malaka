@@ -33,8 +33,8 @@ export default function LoginUI() {
     }
     return(<>
      {(currentUser) ? <>
-      <Loader />
-      <div className="flex flex-col justify-center content-center text-center">
+      
+      <div className="flex pt-52 flex-col justify-center content-center text-center">
         <b className="p-10">Tizimga kirib bolgansiz</b>
         <br/>
       <Link className="p-10 hover:underline" href='/admin'>Admin sahifaga{`->`}</Link>

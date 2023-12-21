@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { Metadata } from "next";
+import HeaderUz from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Error Page",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function Error({ error }: { error: Error }){
   return (
     <>
+    <HeaderUz/>
       <section className="relative z-10 pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
         <div className="container">
           <div className="flex flex-wrap -mx-4">

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import BackendPage from "./AdminUI";
+import { HeaderAdmin } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Admin",
@@ -7,6 +9,7 @@ export const metadata: Metadata = {
 };
 export default function AdminPage() {
     return(<>
-    admin
+    <HeaderAdmin/>
+   <BackendPage/>
     </>)
 }

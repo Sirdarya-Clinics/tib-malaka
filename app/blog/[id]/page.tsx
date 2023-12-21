@@ -3,6 +3,8 @@ import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 
 import { Metadata } from "next";
+import { findAll } from "@/lib/firebase";
+import HeaderUz from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
@@ -10,9 +12,18 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const BlogDetailsPage = () => {
+async function getData() {
+  const ress = await findAll();
+  return { props: [...ress] };
+}
+
+export default async function BlogDetailsPage({ params }: { params: { slug: string } }) {
+  const data = await getData();
+  const obj = { ...data }.props;
+  const filtered: any[] = obj.filter((item) => item.id == params.slug);
   return (
     <>
+    <HeaderUz/>
       <section className="pb-[120px] pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
@@ -344,4 +355,3 @@ const BlogDetailsPage = () => {
   );
 };
 
-export default BlogDetailsPage;
