@@ -6,6 +6,10 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import { Providers } from "./providers";
+import { Suspense } from "react";
+import Loader from "@/components/Loader";
+import AuthProvider from "@/providers/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,18 +28,17 @@ export default function RootLayout({
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Suspense fallback={<Loader />}>
+          <AuthProvider>
           <Providers>
             <Header />
             {children}
             <Footer />
             <ScrollToTop />
           </Providers>
+          </AuthProvider>
         </Suspense>
       </body>
     </html>
   );
 }
 
-import { Providers } from "./providers";
-import { Suspense } from "react";
-import Loader from "@/components/Loader";
