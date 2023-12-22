@@ -1,12 +1,33 @@
+"use client"
+import { findAll } from "@/lib/firebase";
 import { Blog } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
   const { title, image, paragraph, author, tags, publishDate } = blog;
+
+
+  const [loading, setLoading] = useState(false);
+  const [countries, setCountries] = useState([{}]);
+
+  const fetchData = async () => {
+    setLoading(true);
+
+    const res = await findAll();
+
+    setCountries([...res]);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  
   return (
     <>
-      <div
+       <div
         className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
         data-wow-delay=".1s"
       >

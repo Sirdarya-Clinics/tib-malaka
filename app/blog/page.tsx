@@ -1,6 +1,7 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { GetNews } from "@/components/GetNews";
 import HeaderUz from "@/components/Header";
 
 import { Metadata } from "next";
@@ -31,6 +32,7 @@ const Blog = () => {
                 <SingleBlog blog={blog} />
               </div>
             ))}
+            <GetNews/>
           </div>
 
           <div
