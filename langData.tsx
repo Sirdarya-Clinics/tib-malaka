@@ -26,7 +26,7 @@ export const langData = [
 ];
 
 export const orgName = {
-  uz: "Respuplika o'rta tibbiyot va farmasevtika xodimlari malakasini oshirish va ularni ixtisoslashtirish markazi Guliston filiali",
+  uz: "Respublika o'rta tibbiyot va farmasevtika xodimlari malakasini oshirish va ularni ixtisoslashtirish markazi Guliston filiali",
   en: "Republican Center for Advanced Training and Specialization of Secondary Medical and Pharmaceutical Workers Gulistan regional division",
   ru: "Гулистанское региональное подразделение Республиканского центра повышения квалификации и специализации средних медицинских и фармацевтических работников",
 };

@@ -42,7 +42,7 @@ const AboutSectionOne = () => {
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Ixtisoslashtirish va qayta tayyorlash uchun 25 ta kurs" />
-                    <List text="Kurslar davomiyligi 1.5 oydan 6 oygacha" />
+                    <List text="Kurslar davomiyligi 1.5 oydan 4 oygacha" />
                     <List text="Asosiy ishdan ajralgan va ishdan ajralmagan holda o'qish tashkillashtirilgan" />
                   </div>
                 </div>
